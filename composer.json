@@ -1,0 +1,19 @@
+{
+    "name": "bug_livre_oficial/auth",
+    "type": "project",
+    "require-dev": {
+        "symfony/var-dumper": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BugLivreOficial\\Auth\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "BugLivreOficial",
+            "email": "buglivreoficial@gmail.com"
+        }
+    ],
+    "require": {}
+}
