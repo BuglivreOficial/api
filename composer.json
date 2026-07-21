@@ -1,0 +1,19 @@
+{
+    "name": "bug_livre_oficial/api",
+    "type": "project",
+    "require": {
+        "symfony/var-dumper": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core/",
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "BugLivreOficial",
+            "email": "buglivreoficial@gmail.com"
+        }
+    ]
+}
