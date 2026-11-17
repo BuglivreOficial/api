@@ -17,9 +17,7 @@ try {
         require dirname(__DIR__) . '/routes/api.php';
     });
 
-    
-
     $rota->executar();
 } catch (Throwable $e) {
-    dump($e);
+    var_dump($e);
 }

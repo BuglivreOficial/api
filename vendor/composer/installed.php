@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'buglivreoficial/alfha',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'c22f1ba0f6617b535251c4b491c257818afbb8e8',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,31 +11,13 @@
     ),
     'versions' => array(
         'buglivreoficial/alfha' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'c22f1ba0f6617b535251c4b491c257818afbb8e8',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,
-        ),
-        'symfony/polyfill-mbstring' => array(
-            'pretty_version' => 'v1.43.3',
-            'version' => '1.43.3.0',
-            'reference' => '122889ed24dc000165bcbfd77ec412f15cbdfc6a',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../symfony/polyfill-mbstring',
-            'aliases' => array(),
-            'dev_requirement' => true,
-        ),
-        'symfony/var-dumper' => array(
-            'pretty_version' => 'v8.1.10',
-            'version' => '8.1.10.0',
-            'reference' => '3412a5af7d34a19515a77890fc804fe8e50d1a4f',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../symfony/var-dumper',
-            'aliases' => array(),
-            'dev_requirement' => true,
         ),
     ),
 );
