@@ -1,0 +1,19 @@
+{
+    "name": "buglivreoficial/alfha",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core/",
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "BugLivreOficial",
+            "email": "buglivreoficial@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "symfony/var-dumper": "^8.1"
+    }
+}

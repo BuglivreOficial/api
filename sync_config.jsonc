@@ -1,0 +1,56 @@
+{
+	"api": {
+		"type": "ftp",
+		"host": "167.114.55.110",
+		"port": 21,
+		"username": "buglivre",
+		"password": "e2DHSMN2XsQfnv@",
+		"proxy": false,
+		"upload_on_save": true,
+		"watch": false,
+		"submit_git_before_upload": false,
+		"submit_git_msg": "",
+		"build": "",
+		"compress": false,
+		"remote_unpacked": false,
+		"delete_remote_compress": false,
+		"delete_local_compress": false,
+		"deleteRemote": false,
+		"upload_to_root": false,
+		"distPath": [],
+		"remotePath": "",
+		"excludePath": [],
+		"downloadPath": "",
+		"downloadExcludePath": [],
+		"default": false
+	}
+	// Configuração de referência
+	// Nome do ambiente, suporta nome personalizado
+	// "test": { // Ambiente de teste
+	//     "type": "", // (Obrigatório) Tipo de conexão, valores opcionais: ftp, sftp, ssh
+	//     "host": "0.0.0.0", // (Obrigatório) Endereço do servidor
+	//     "port": 22, // (Opcional) Número da porta, padrão 21 para ftp, 22 para sftp e ssh
+	//     "username": "username", // (Obrigatório) Nome de usuário para login
+	//     "password": "password", // Senha de login (ou caminho da chave privada, escolha um)
+	//     // "privateKeyPath": "/your_path/id_rsa", //  (Configuração sftp, ssh) Caminho da chave privada (ou senha de login, escolha um), atenção: evite colocar a chave no diretório do código
+	//     // "secretKeyPath": "/your_path/secret_key.txt", //  Caminho da chave privada criptografada, usada para criptografar nome de usuário e senha, atenção: evite colocar a chave no diretório do código
+	//     "proxy": false, // Usar proxy, padrão false
+	//     "upload_on_save": false, // Envio em tempo real após salvar, recomendado para desenvolvimento individual, quando upload_on_save é true, watch, submit_git_before_upload, compress, deleteRemote são ignorados, padrão false
+	//     "watch": false, // Monitorar alterações de arquivos no diretório de upload, padrão false, se upload_on_save for true, esta opção é ignorada. Se distPath estiver configurado, apenas monitora alterações no diretório distPath
+	//     "submit_git_before_upload": false, // Para desenvolvimento em equipe, commit no git local antes de enviar, para evitar sobrescrever código remoto, padrão false
+	//     "submit_git_msg": "", // Mensagem de commit no git, padrão vazio. Se submit_git_before_upload for true e não preenchido, exibe prompt para preenchimento manual
+	//     // "build": "yarn build:test", // (Opcional) Comando de build, ative para projetos frontend
+	//     "compress": false, //  Compactar antes de enviar e descompactar remotamente (a conta precisa suportar login ssh, o sistema verifica automaticamente, se não suportar, não compacta), padrão false
+	//     "remote_unpacked": true, // Descompactar remotamente após envio compactado, padrão true para ssh, false para outros
+	//     "delete_remote_compress": true, // Excluir arquivo compactado remoto após envio, padrão true para ssh, false para outros
+	//     "delete_local_compress": true, // Excluir arquivo compactado local após envio, padrão true
+	//     "upload_to_root": false, // Se distPath tiver apenas um diretório, enviar para a raiz de remotePath, geralmente usado para implantação de código frontend, padrão false
+	//     "deleteRemote": false, // Excluir diretório distPath remoto antes de enviar, geralmente usado para limpar código de implantação frontend, padrão false
+	//     "distPath": [], // (Opcional) Diretório local para envio, suporta string ou array, padrão envia diretório raiz
+	//     "remotePath": "/www/wwwroot/test", // (Configuração sftp, ssh) Endereço do servidor de upload
+	//     "excludePath": [], // (Opcional) Arquivos e diretórios excluídos no ambiente atual, mesclado com excludePath da configuração do plugin, se o plugin usar gitignore, mesclado com .gitignore
+	//     "downloadPath": "", //  (Opcional) Caminho de download, padrão diretório raiz do projeto, usado para download manual de arquivos ou pastas, pode especificar local de download
+	//     "downloadExcludePath": [],//  (Opcional) Arquivos e diretórios excluídos no download
+	//     "default": false // Ambiente padrão, se true, permite envio rápido de arquivos ou pastas pelo menu de contexto, comparar arquivos remotos, padrão false
+	// }
+}
