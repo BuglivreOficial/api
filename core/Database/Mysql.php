@@ -1,6 +1,7 @@
 <?php
 namespace Core\Database;
 
+use Core\Exceptions\MysqlException;
 use PDO;
 use PDOException;
 
@@ -18,7 +19,8 @@ class Mysql
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $pdo;
         } catch (PDOException $e) {
-            dump($e);
+            throw new MysqlException($e);
+            
         }
     }
 }

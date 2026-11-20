@@ -1,8 +1,9 @@
 <?php
+require dirname(__DIR__) . '/vendor/autoload.php';
 
 use Core\Helpers\Slave;
+use Core\Http\Response;
 
-require dirname(__DIR__) . '/vendor/autoload.php';
 
 define('DIR', dirname(__DIR__));
 
@@ -16,17 +17,20 @@ try {
         $slave->envDevelopment();
     }
 
-    dump($_ENV['DB_HOST']);
-
-    $rota = new \Core\Http\Routing();
+    $route = new \Core\Http\Routing();
 
     $db = new \Core\Database\Mysql()->make();
 
-    $rota->grupo('/api', function ($rota) {
+    $route->group('/api', function ($route) {
         require dirname(__DIR__) . '/routes/api.php';
     });
 
-    $rota->executar();
+    $route->start($db);
+} catch (\Core\Exceptions\MysqlException $e) {
+    (new Response())->json([
+        'status' => false,
+        'message' => 'O servidor não conseguiu concluir sua solicitação. Tente novamente mais tarde.'
+    ], 500);
 } catch (Throwable $e) {
-    dump($e, $_SERVER);
+    dump('index.php', $e);
 }

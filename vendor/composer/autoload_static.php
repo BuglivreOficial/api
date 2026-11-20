@@ -21,6 +21,7 @@ class ComposerStaticInit0336975176cc00aef56f6593e746e828
         'C' =>
         array (
             'Core\\' => 5,
+            'Cocur\\Slugify\\' => 14,
         ),
         'A' =>
         array (
@@ -40,6 +41,10 @@ class ComposerStaticInit0336975176cc00aef56f6593e746e828
         'Core\\' =>
         array (
             0 => __DIR__ . '/../..' . '/core',
+        ),
+        'Cocur\\Slugify\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/cocur/slugify/src',
         ),
         'App\\' =>
         array (

@@ -15,5 +15,8 @@
     ],
     "require-dev": {
         "symfony/var-dumper": "^8.1"
+    },
+    "require": {
+        "cocur/slugify": "^4.8"
     }
 }

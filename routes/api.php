@@ -3,10 +3,14 @@
 use App\Controllers\CategoriaController;
 
 /**
- * @var \Core\Http\Routing $rota
+ * @var \Core\Http\Routing $route
  */
 
-$rota->post('/categoria/criar', [CategoriaController::class, 'criar']);
-$rota->get('/categoria/listar', function() {
-    echo 'kkkkkk';
-});
+$route->get('/category', [CategoriaController::class, 'list']);
+$route->post('/categoria/criar', [CategoriaController::class, 'criar']);
+
+// Rotas responsáveis por deletar, listar, restaurar e deletar permanentemente categorias
+$route->get('/category/trash', [CategoriaController::class, 'trash']);
+$route->delete('/category/{id:int}', [CategoriaController::class, 'delete']);
+$route->patch('/category/{id:int}/restore', [CategoriaController::class, 'restore']);
+$route->delete('/category/{id:int}/force-delete', [CategoriaController::class, 'forceDelete']);
