@@ -1,6 +1,9 @@
 <?php
 
+use Core\Helpers\Slave;
+
 require dirname(__DIR__) . '/vendor/autoload.php';
+
 
 try {
     if (!file_exists(dirname(__DIR__) . '/.env')) {
@@ -10,6 +13,8 @@ try {
     if ($env === false) {
         throw new Exception("Error a gerar variaveis de ambiente");
     }
+
+    dump(Slave::inProduction());
 
     $rota = new \Core\Http\Routing();
 
