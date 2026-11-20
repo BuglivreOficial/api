@@ -13,11 +13,13 @@ try {
 
     $rota = new \Core\Http\Routing();
 
+    $db = new \Core\Database\Mysql()->make();
+
     $rota->grupo('/api', function ($rota) {
         require dirname(__DIR__) . '/routes/api.php';
     });
 
     $rota->executar();
 } catch (Throwable $e) {
-    var_dump($e);
+    dump($e, $_SERVER);
 }
