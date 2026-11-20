@@ -48,7 +48,7 @@ class CategoriaController extends BaseController
     public function list(PDO $db)
     {
         try {
-            $sql = "SELECT id, name, slug FROM category WHER deleted_at IS NULL ORDER BY name ASC";
+            $sql = "SELECT id, name, slug FROM category WHERE deleted_at IS NULL ORDER BY name ASC";
             $stmt = $db->query($sql);
             $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $this->response->json([
