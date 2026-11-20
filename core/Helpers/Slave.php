@@ -7,7 +7,7 @@ class Slave
 {
     public function inProduction()
     {
-        return !$_SERVER['REMOTE_ADDR'] == '127.0.0.1';
+        return $_SERVER['SERVER_NAME'] == APP_URL;
     }
     public function envProduction()
     {
